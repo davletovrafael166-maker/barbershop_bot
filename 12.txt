@@ -1,0 +1,19 @@
+barbershop_bot/
+├── .env                    # Все настройки
+├── main.py                 # Точка входа
+├── config.py               # Загрузка .env
+├── database.py             # Работа с SQLite
+├── handlers/               # Обработчики команд
+│   ├── __init__.py
+│   ├── start.py            # /start и главное меню
+│   ├── booking.py          # Запись к мастеру
+│   ├── my_bookings.py      # Мои записи
+│   └── admin.py            # Админ-панель
+├── keyboards/              # Клавиатуры
+│   ├── __init__.py
+│   └── inline.py           # Все инлайн-кнопки
+├── utils/                  # Утилиты
+│   ├── __init__.py
+│   ├── scheduler.py        # Напоминания за 2 часа
+│   └── helpers.py          # Вспомогательные функции
+└── requirements.txt        # Зависимости
